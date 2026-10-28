@@ -1,0 +1,40 @@
+RPLIDAR A1M8 HAT - KiCad mechanical template
+Copyright (c) 2026 Anders Frandsen
+
+This project is licensed under the CERN Open Hardware Licence Version 2 -
+Permissive (CERN-OHL-P-2.0, see LICENSE), except for the third-party
+material listed below, which remains under its own licence.
+
+Source Location: https://github.com/AndersFrandsen/RPLIDAR_A1M8_HAT
+
+Parts of this project were generated with the help of an AI assistant
+(Claude, by Anthropic).
+
+------------------------------------------------------------------------------
+Third-party material
+------------------------------------------------------------------------------
+
+1. RPLIDAR A1M8 3D model
+   File:     3dmodels/RPLIDAR_A1M8.step
+   Source:   turtlebot4_description/meshes/rplidar.dae
+             https://github.com/turtlebot/turtlebot4 (branch: humble)
+             Package maintained by Clearpath Robotics.
+   Licence:  Apache License, Version 2.0
+             Full text: 3dmodels/LICENSE-Apache-2.0.txt
+             https://www.apache.org/licenses/LICENSE-2.0
+
+   Modifications (per Apache-2.0 section 4(b)):
+   The original COLLADA mesh was converted to a faceted STEP solid using
+   OpenCASCADE. It was rotated and translated into KiCad footprint
+   coordinates: origin at the scan axis, +Y toward the motor, and Z = 0 at
+   the bottom of the standoffs. No other changes were made to the geometry.
+
+   Derived data:
+   The board outline, mounting-hole positions and under-body clearances in
+   this project were measured from the same mesh.
+
+2. Reference data
+   SLAMTEC "RPLIDAR A1 Introduction and Datasheet, Model A1M8", rev 3.0
+   (2020-10-15), Shanghai Slamtec Co., Ltd.
+   Used only as a reference for overall dimensions and screw size. No part
+   of the datasheet is redistributed in this repository.
